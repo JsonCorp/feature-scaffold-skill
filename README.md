@@ -1,5 +1,6 @@
 # feature-scaffold-skill
 
+[![GitHub release](https://img.shields.io/github/v/release/JsonCorp/feature-scaffold-skill)](https://github.com/JsonCorp/feature-scaffold-skill/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-skill-d97757)](https://claude.com/claude-code)
 [![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org)
