@@ -123,6 +123,7 @@ cp -r .claude/skills/feature-scaffold ~/.claude/skills/
 
 ## 더 보기
 
+- 📊 사용 가이드 슬라이드: [docs/feature-scaffold-usage.pptx](docs/feature-scaffold-usage.pptx) (생성기: [docs/gen_usage_pptx.py](docs/gen_usage_pptx.py))
 - 설계 배경과 상세 노트: [docs/claude-skills-android-scaffold.md](docs/claude-skills-android-scaffold.md)
 - 변경 이력: [CHANGELOG.md](CHANGELOG.md)
 
