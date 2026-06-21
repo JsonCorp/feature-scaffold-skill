@@ -1,9 +1,9 @@
 ---
 name: feature-scaffold
-description: 클린 아키텍처 기능 모듈의 표준 골격(data, domain, presentation 레이어)을 한 번에 생성합니다. 새 화면이나 기능 작업을 시작할 때 사용합니다.
+description: 클린 아키텍처 기능 모듈의 표준 골격(domain, data, ui 레이어 + Hilt DI + 테스트)을 한 번에 생성합니다. 새 화면이나 기능 작업을 시작할 때 사용합니다.
 argument-hint: FeatureName[:field1[:Type],field2...]
 disable-model-invocation: true
-allowed-tools: Write Bash(mkdir *)
+allowed-tools: Read Write Bash
 ---
 
 # 기능 모듈 스캐폴딩

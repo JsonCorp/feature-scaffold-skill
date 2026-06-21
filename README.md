@@ -100,10 +100,30 @@ cp -r .claude/skills/feature-scaffold ~/.claude/skills/
 - **취소 안전성**: ViewModel의 비동기 호출은 `try/catch`로 감싸고 `CancellationException`은 rethrow. (`runCatching` 미사용)
 - **DI**: 공통 `Retrofit`은 `core/network/di/NetworkModule`이 제공하고 각 기능은 이를 주입받음. Repository는 `@Binds`, Api는 `@Provides`.
 
+## 필요한 의존성
+
+생성되는 코드는 아래 라이브러리를 전제로 합니다. 실제 프로젝트의 `build.gradle(.kts)`에 추가되어 있어야 컴파일됩니다.
+
+| 영역 | 라이브러리 |
+|------|-----------|
+| DI | `com.google.dagger:hilt-android` (+ compiler), `androidx.hilt:hilt-navigation-compose` |
+| 코루틴 | `org.jetbrains.kotlinx:kotlinx-coroutines-android` |
+| Lifecycle | `androidx.lifecycle:lifecycle-viewmodel-ktx`, `androidx.lifecycle:lifecycle-runtime-compose` |
+| Compose | Compose BOM (`androidx.compose.runtime` 등) |
+| 네트워크 | `com.squareup.retrofit2:retrofit`, `retrofit2:converter-moshi`, `com.squareup.moshi:moshi-kotlin` |
+| 테스트 | `junit:junit`, `io.mockk:mockk`, `org.jetbrains.kotlinx:kotlinx-coroutines-test` |
+
+> 공통 `Retrofit`/`OkHttpClient`는 스킬이 사전 조건으로 만드는 `core/network/di/NetworkModule`이 제공합니다.
+
 ## 베이스 패키지 설정
 
 생성되는 모든 코드의 패키지 루트는 [`.claude/skills/feature-scaffold/config.md`](.claude/skills/feature-scaffold/config.md)의 `base_package` 한 줄로 결정됩니다.
 다른 프로젝트로 옮길 때 이 값만 바꾸면 됩니다. 호출 시 `--pkg=com.your.app` 인자로 1회성 오버라이드도 가능합니다.
+
+## 더 보기
+
+- 설계 배경과 상세 노트: [docs/claude-skills-android-scaffold.md](docs/claude-skills-android-scaffold.md)
+- 변경 이력: [CHANGELOG.md](CHANGELOG.md)
 
 ## 라이선스
 
