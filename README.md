@@ -1,5 +1,12 @@
 # feature-scaffold-skill
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-skill-d97757)](https://claude.com/claude-code)
+[![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org)
+[![Clean Architecture](https://img.shields.io/badge/architecture-clean-2ea44f)](#컨벤션)
+[![GitHub last commit](https://img.shields.io/github/last-commit/JsonCorp/feature-scaffold-skill)](https://github.com/JsonCorp/feature-scaffold-skill/commits/main)
+[![GitHub stars](https://img.shields.io/github/stars/JsonCorp/feature-scaffold-skill?style=social)](https://github.com/JsonCorp/feature-scaffold-skill/stargazers)
+
 Android 클린 아키텍처 기능 모듈의 표준 골격을 한 번에 생성하는 [Claude Code](https://claude.com/claude-code) 스킬입니다.
 기능 이름(과 선택적 필드)만 주면 domain / data / ui 레이어 + Hilt DI + 테스트 골격까지 정형화된 형태로 만들어 줍니다.
 
