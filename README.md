@@ -39,7 +39,31 @@ feature/article/                              com.example.app.feature.article
 
 ## 설치
 
-스킬 디렉토리를 사용할 프로젝트의 `.claude/skills/`(프로젝트 전용) 또는 `~/.claude/skills/`(전역)로 복사합니다.
+레포를 클론한 뒤 설치 스크립트를 실행하면 됩니다.
+
+```bash
+git clone https://github.com/JsonCorp/feature-scaffold-skill.git
+cd feature-scaffold-skill
+```
+
+**macOS / Linux / Git Bash**
+
+```bash
+./install.sh                 # 현재 프로젝트의 .claude/skills/ 에 설치
+./install.sh /path/to/proj   # 지정한 프로젝트에 설치
+./install.sh --global        # ~/.claude/skills/ 에 전역 설치
+```
+
+**Windows (PowerShell)**
+
+```powershell
+.\install.ps1                 # 현재 프로젝트의 .claude\skills\ 에 설치
+.\install.ps1 -Target C:\proj # 지정한 프로젝트에 설치
+.\install.ps1 -Global         # ~\.claude\skills\ 에 전역 설치
+```
+
+<details>
+<summary>스크립트 없이 수동 복사</summary>
 
 ```bash
 # 프로젝트 전용
@@ -48,6 +72,7 @@ cp -r .claude/skills/feature-scaffold <your-project>/.claude/skills/
 # 또는 전역
 cp -r .claude/skills/feature-scaffold ~/.claude/skills/
 ```
+</details>
 
 ## 사용법
 
